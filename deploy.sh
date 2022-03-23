@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-REPOSITORY=/home/ec2-user
+REPOSITORY=/opt/board-app
 cd $REPOSITORY
 
 APP_NAME=board_app
