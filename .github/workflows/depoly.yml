@@ -41,11 +41,11 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Upload to S3
-        run: aws s3 cp --region us-east-1 ./$GITHUB_SHA.zip s3://board-back-bucket/$PROJECT_NAME/$GITHUB_SHA.zip
+        run: aws s3 cp --region us-east-1 ./$GITHUB_SHA.zip s3://board-back-bucket/dev/$PROJECT_NAME/$GITHUB_SHA.zip
 
       - name: Code Deploy
         run: aws deploy create-deployment 
           --application-name board-app 
           --deployment-config-name CodeDeployDefault.OneAtATime 
           --deployment-group-name dev 
-          --s3-location bucket=board-back-bucket,bundleType=zip,key=$PROJECT_NAME/$GITHUB_SHA.zip
+          --s3-location bucket=board-back-bucket/dev,bundleType=zip,key=$PROJECT_NAME/$GITHUB_SHA.zip
