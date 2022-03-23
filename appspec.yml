@@ -3,9 +3,9 @@ os: linux
 
 files:
   - source: /
-    destination: /home/ec2-user/
+    destination: /opt/board-app
 permissions:
-  - object: /home/ec2-user/
+  - object: /opt/board-app
     owner: ubuntu
     group: ubuntu
     mode: 755
