@@ -6,8 +6,8 @@ files:
     destination: /opt/board-app
 permissions:
   - object: /opt/board-app
-    owner: ubuntu
-    group: ubuntu
+    owner: ec2-user
+    group: ec2-user
     mode: 755
 hooks:
   AfterInstall:
