@@ -4,7 +4,7 @@ REPOSITORY=/opt/board-app
 cd $REPOSITORY
 
 APP_NAME=board-back
-JAR_NAME=$(ls $REPOSITORY/build/libs/ | grep '.jar' | tail -n 1)
+JAR_NAME=$(ls $REPOSITORY/build/libs/ | grep 'SNAPSHOT.jar' | tail -n 1)
 JAR_PATH=$REPOSITORY/build/libs/$JAR_NAME
 
 echo "> JAR NAME: $JAR_NAME"
