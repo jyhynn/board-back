@@ -3,9 +3,9 @@ os: linux
 
 files:
   - source: /
-    destination: /opt/board-back
+    destination: /opt/board-app
 permissions:
-  - object: /opt/board-back
+  - object: /opt/board-app
     owner: ec2-user
     group: ec2-user
     mode: 755
