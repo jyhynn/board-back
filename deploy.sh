@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-REPOSITORY=/opt/board-app
+REPOSITORY=/opt/board-back
 cd $REPOSITORY
 
-APP_NAME=board-app
+APP_NAME=board-back
 JAR_NAME=$(ls $REPOSITORY/build/libs/ | grep '.jar' | tail -n 1)
 JAR_PATH=$REPOSITORY/build/libs/$JAR_NAME
 
