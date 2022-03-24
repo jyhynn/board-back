@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-REPOSITORY=/opt/board-back
+REPOSITORY=/opt/board-app
 cd $REPOSITORY
 
 APP_NAME=board-back
