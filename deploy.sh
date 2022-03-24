@@ -7,7 +7,8 @@ APP_NAME=board-back
 JAR_NAME=$(ls $REPOSITORY/build/libs/ | grep '.jar' | tail -n 1)
 JAR_PATH=$REPOSITORY/build/libs/$JAR_NAME
 
-echo "> APP NAME: $APP_NAME"
+echo "> JAR NAME: $JAR_NAME"
+
 CURRENT_PID=$(pgrep -f $APP_NAME)
 
 if [ -z $CURRENT_PID ]
