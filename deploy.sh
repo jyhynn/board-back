@@ -21,8 +21,7 @@ else
 fi
 
 echo "> $JAR_PATH 배포"
-
 # nohup java -jar $JAR_PATH > /dev/null 2> /dev/null < /dev/null &
 
 # 로그 파일 생성
-nohup java -jar $JAR_PATH --logging.file.path=/opt/logs --logging.level.org.hibernate.SQL=DEBUG >> /opt/deploy.log /opt/deploy_err.log &
+nohup java -jar $JAR_PATH --logging.file.path=/opt/logs > /dev/null 2> /dev/null < /dev/null &
